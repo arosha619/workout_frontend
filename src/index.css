@@ -1,0 +1,93 @@
+:root{
+  --primary:rgb(9, 174, 61);
+  --error :rgb(185, 30, 30);
+}
+body{
+  background: rgb(216, 216, 216);
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+}
+header{
+  background: white;
+}
+header .container{
+  max-width: 1400px;
+  margin: 0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a{
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* home page */
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details{
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(83, 82, 82);
+}
+.workout-details h4{
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p{
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: rgb(111, 7, 7);
+  padding: 6px;
+  border-radius: 5%;
+  color: #f2efef;
+}
+/* work out form */
+label,input{
+  display: block;
+}
+input{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button{
+  background-color: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error{
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
